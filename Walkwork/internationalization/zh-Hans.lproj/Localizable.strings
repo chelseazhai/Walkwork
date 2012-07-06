@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Walkwork
+
+  Created by  on 12-6-14.
+  Copyright (c) 2012年 richitec. All rights reserved.
+*/
+
+// user login section
+"user login view title" = "欢迎使用电话会议";
+"user register navigate button title" = "注册";
+
+// user register section
+"user register view title" = "注册";
+"user register back button title" = "返回";

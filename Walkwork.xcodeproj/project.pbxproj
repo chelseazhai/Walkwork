@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCAD36BF158F859B0013F438 /* Pinyin4jBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DCAD36BE158F859B0013F438 /* Pinyin4jBundle.bundle */; };
+		DCBBB32B158A3626007C2301 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBBB32A158A3626007C2301 /* UIKit.framework */; };
+		DCBBB32D158A3626007C2301 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBBB32C158A3626007C2301 /* Foundation.framework */; };
+		DCBBB32F158A3626007C2301 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBBB32E158A3626007C2301 /* CoreGraphics.framework */; };
+		DCBBB337158A3626007C2301 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBBB336158A3626007C2301 /* main.m */; };
+		DCBBB33B158A3626007C2301 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBBB33A158A3626007C2301 /* AppDelegate.m */; };
+		DCBBB350158A3746007C2301 /* CommonToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBBB34F158A3746007C2301 /* CommonToolkit.framework */; };
+		DCBBB352158A3751007C2301 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBBB351158A3751007C2301 /* AddressBook.framework */; };
+		DCBBB354158A3758007C2301 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBBB353158A3758007C2301 /* CFNetwork.framework */; };
+		DCBBB356158A3762007C2301 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBBB355158A3762007C2301 /* MobileCoreServices.framework */; };
+		DCBBB358158A3768007C2301 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBBB357158A3768007C2301 /* SystemConfiguration.framework */; };
+		DCBBB35A158A376C007C2301 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBBB359158A376C007C2301 /* libz.dylib */; };
+		DCBBB35D158A3848007C2301 /* UserLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBBB35C158A3848007C2301 /* UserLoginViewController.m */; };
+		DCBBB360158A386C007C2301 /* UserRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBBB35F158A386C007C2301 /* UserRegisterViewController.m */; };
+		DCBBB363158A3883007C2301 /* UserLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBBB362158A3883007C2301 /* UserLoginView.m */; };
+		DCBBB366158A3896007C2301 /* UserRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBBB365158A3896007C2301 /* UserRegisterView.m */; };
+		DCBBB370158A3B28007C2301 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCBBB36E158A3B27007C2301 /* InfoPlist.strings */; };
+		DCBBB377158A3B4F007C2301 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCBBB375158A3B4F007C2301 /* Localizable.strings */; };
+		DCC03695159C6D1C00D19A26 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC03694159C6D1C00D19A26 /* libicucore.dylib */; };
+		DCD6AEF1158EF14C00CBBBDB /* CommonToolkitBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DCD6AEED158EF14C00CBBBDB /* CommonToolkitBundle.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DCAD36BE158F859B0013F438 /* Pinyin4jBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Pinyin4jBundle.bundle; sourceTree = "<group>"; };
+		DCBBB326158A3626007C2301 /* Walkwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Walkwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCBBB32A158A3626007C2301 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DCBBB32C158A3626007C2301 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DCBBB32E158A3626007C2301 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DCBBB332158A3626007C2301 /* Walkwork-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Walkwork-Info.plist"; sourceTree = "<group>"; };
+		DCBBB336158A3626007C2301 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCBBB338158A3626007C2301 /* Walkwork-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Walkwork-Prefix.pch"; sourceTree = "<group>"; };
+		DCBBB339158A3626007C2301 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DCBBB33A158A3626007C2301 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DCBBB34F158A3746007C2301 /* CommonToolkit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonToolkit.framework; path = Walkwork/othersFramework/CommonToolkit.framework; sourceTree = "<group>"; };
+		DCBBB351158A3751007C2301 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		DCBBB353158A3758007C2301 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DCBBB355158A3762007C2301 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DCBBB357158A3768007C2301 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DCBBB359158A376C007C2301 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DCBBB35B158A3848007C2301 /* UserLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserLoginViewController.h; path = viewControllers/UserLoginViewController.h; sourceTree = "<group>"; };
+		DCBBB35C158A3848007C2301 /* UserLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserLoginViewController.m; path = viewControllers/UserLoginViewController.m; sourceTree = "<group>"; };
+		DCBBB35E158A386C007C2301 /* UserRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserRegisterViewController.h; path = viewControllers/UserRegisterViewController.h; sourceTree = "<group>"; };
+		DCBBB35F158A386C007C2301 /* UserRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserRegisterViewController.m; path = viewControllers/UserRegisterViewController.m; sourceTree = "<group>"; };
+		DCBBB361158A3883007C2301 /* UserLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserLoginView.h; path = views/UserLoginView.h; sourceTree = "<group>"; };
+		DCBBB362158A3883007C2301 /* UserLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserLoginView.m; path = views/UserLoginView.m; sourceTree = "<group>"; };
+		DCBBB364158A3896007C2301 /* UserRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserRegisterView.h; path = views/UserRegisterView.h; sourceTree = "<group>"; };
+		DCBBB365158A3896007C2301 /* UserRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserRegisterView.m; path = views/UserRegisterView.m; sourceTree = "<group>"; };
+		DCBBB36F158A3B28007C2301 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = internationalization/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCBBB371158A3B3B007C2301 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "internationalization/zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		DCBBB373158A3B44007C2301 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "internationalization/zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		DCBBB376158A3B4F007C2301 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = internationalization/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DCBBB378158A3B66007C2301 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "internationalization/zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		DCBBB37A158A3B6F007C2301 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "internationalization/zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		DCC03694159C6D1C00D19A26 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		DCD6AEED158EF14C00CBBBDB /* CommonToolkitBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CommonToolkitBundle.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCBBB323158A3626007C2301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCC03695159C6D1C00D19A26 /* libicucore.dylib in Frameworks */,
+				DCBBB35A158A376C007C2301 /* libz.dylib in Frameworks */,
+				DCBBB358158A3768007C2301 /* SystemConfiguration.framework in Frameworks */,
+				DCBBB356158A3762007C2301 /* MobileCoreServices.framework in Frameworks */,
+				DCBBB354158A3758007C2301 /* CFNetwork.framework in Frameworks */,
+				DCBBB352158A3751007C2301 /* AddressBook.framework in Frameworks */,
+				DCBBB350158A3746007C2301 /* CommonToolkit.framework in Frameworks */,
+				DCBBB32B158A3626007C2301 /* UIKit.framework in Frameworks */,
+				DCBBB32D158A3626007C2301 /* Foundation.framework in Frameworks */,
+				DCBBB32F158A3626007C2301 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCBBB31B158A3626007C2301 = {
+			isa = PBXGroup;
+			children = (
+				DCBBB330158A3626007C2301 /* Walkwork */,
+				DCBBB329158A3626007C2301 /* Frameworks */,
+				DCBBB327158A3626007C2301 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCBBB327158A3626007C2301 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCBBB326158A3626007C2301 /* Walkwork.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCBBB329158A3626007C2301 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCC03694159C6D1C00D19A26 /* libicucore.dylib */,
+				DCBBB359158A376C007C2301 /* libz.dylib */,
+				DCBBB357158A3768007C2301 /* SystemConfiguration.framework */,
+				DCBBB355158A3762007C2301 /* MobileCoreServices.framework */,
+				DCBBB353158A3758007C2301 /* CFNetwork.framework */,
+				DCBBB351158A3751007C2301 /* AddressBook.framework */,
+				DCBBB34F158A3746007C2301 /* CommonToolkit.framework */,
+				DCBBB32A158A3626007C2301 /* UIKit.framework */,
+				DCBBB32C158A3626007C2301 /* Foundation.framework */,
+				DCBBB32E158A3626007C2301 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCBBB330158A3626007C2301 /* Walkwork */ = {
+			isa = PBXGroup;
+			children = (
+				DCBBB339158A3626007C2301 /* AppDelegate.h */,
+				DCBBB33A158A3626007C2301 /* AppDelegate.m */,
+				DCBBB347158A36E7007C2301 /* App */,
+				DCD6AEEB158EF14C00CBBBDB /* Resources */,
+				DCBBB331158A3626007C2301 /* Supporting Files */,
+			);
+			path = Walkwork;
+			sourceTree = "<group>";
+		};
+		DCBBB331158A3626007C2301 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCBBB332158A3626007C2301 /* Walkwork-Info.plist */,
+				DCBBB36E158A3B27007C2301 /* InfoPlist.strings */,
+				DCBBB336158A3626007C2301 /* main.m */,
+				DCBBB338158A3626007C2301 /* Walkwork-Prefix.pch */,
+				DCBBB375158A3B4F007C2301 /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCBBB347158A36E7007C2301 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DCBBB34C158A3700007C2301 /* System */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		DCBBB34C158A3700007C2301 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				DCBBB34D158A3708007C2301 /* Login */,
+				DCBBB34E158A370E007C2301 /* Register */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		DCBBB34D158A3708007C2301 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				DCBBB35B158A3848007C2301 /* UserLoginViewController.h */,
+				DCBBB35C158A3848007C2301 /* UserLoginViewController.m */,
+				DCBBB361158A3883007C2301 /* UserLoginView.h */,
+				DCBBB362158A3883007C2301 /* UserLoginView.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		DCBBB34E158A370E007C2301 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				DCBBB35E158A386C007C2301 /* UserRegisterViewController.h */,
+				DCBBB35F158A386C007C2301 /* UserRegisterViewController.m */,
+				DCBBB364158A3896007C2301 /* UserRegisterView.h */,
+				DCBBB365158A3896007C2301 /* UserRegisterView.m */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
+		DCD6AEEB158EF14C00CBBBDB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DCD6AEEC158EF14C00CBBBDB /* Bundles */,
+				DCD6AEEE158EF14C00CBBBDB /* Icons */,
+				DCD6AEEF158EF14C00CBBBDB /* Images */,
+				DCD6AEF0158EF14C00CBBBDB /* Splash */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DCD6AEEC158EF14C00CBBBDB /* Bundles */ = {
+			isa = PBXGroup;
+			children = (
+				DCD6AEED158EF14C00CBBBDB /* CommonToolkitBundle.bundle */,
+				DCAD36BE158F859B0013F438 /* Pinyin4jBundle.bundle */,
+			);
+			path = Bundles;
+			sourceTree = "<group>";
+		};
+		DCD6AEEE158EF14C00CBBBDB /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		DCD6AEEF158EF14C00CBBBDB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		DCD6AEF0158EF14C00CBBBDB /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCBBB325158A3626007C2301 /* Walkwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCBBB344158A3626007C2301 /* Build configuration list for PBXNativeTarget "Walkwork" */;
+			buildPhases = (
+				DCBBB322158A3626007C2301 /* Sources */,
+				DCBBB323158A3626007C2301 /* Frameworks */,
+				DCBBB324158A3626007C2301 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Walkwork;
+			productName = Walkwork;
+			productReference = DCBBB326158A3626007C2301 /* Walkwork.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCBBB31D158A3626007C2301 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = richitec;
+			};
+			buildConfigurationList = DCBBB320158A3626007C2301 /* Build configuration list for PBXProject "Walkwork" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = DCBBB31B158A3626007C2301;
+			productRefGroup = DCBBB327158A3626007C2301 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCBBB325158A3626007C2301 /* Walkwork */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCBBB324158A3626007C2301 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCBBB370158A3B28007C2301 /* InfoPlist.strings in Resources */,
+				DCBBB377158A3B4F007C2301 /* Localizable.strings in Resources */,
+				DCD6AEF1158EF14C00CBBBDB /* CommonToolkitBundle.bundle in Resources */,
+				DCAD36BF158F859B0013F438 /* Pinyin4jBundle.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCBBB322158A3626007C2301 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCBBB337158A3626007C2301 /* main.m in Sources */,
+				DCBBB33B158A3626007C2301 /* AppDelegate.m in Sources */,
+				DCBBB35D158A3848007C2301 /* UserLoginViewController.m in Sources */,
+				DCBBB360158A386C007C2301 /* UserRegisterViewController.m in Sources */,
+				DCBBB363158A3883007C2301 /* UserLoginView.m in Sources */,
+				DCBBB366158A3896007C2301 /* UserRegisterView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DCBBB36E158A3B27007C2301 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCBBB36F158A3B28007C2301 /* en */,
+				DCBBB371158A3B3B007C2301 /* zh-Hans */,
+				DCBBB373158A3B44007C2301 /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DCBBB375158A3B4F007C2301 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCBBB376158A3B4F007C2301 /* en */,
+				DCBBB378158A3B66007C2301 /* zh-Hans */,
+				DCBBB37A158A3B6F007C2301 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCBBB342158A3626007C2301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wei Feng (873P3T58BW)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "73E958DD-A109-45E0-B78F-2AC90554DE83";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DCBBB343158A3626007C2301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wei Feng (873P3T58BW)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "73E958DD-A109-45E0-B78F-2AC90554DE83";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCBBB345158A3626007C2301 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wei Feng (873P3T58BW)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Walkwork/othersFramework\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Walkwork/Walkwork-Prefix.pch";
+				INFOPLIST_FILE = "Walkwork/Walkwork-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "113159CB-D436-4E2A-BF39-1531A5AC44F9";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DCBBB346158A3626007C2301 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wei Feng (873P3T58BW)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Walkwork/othersFramework\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Walkwork/Walkwork-Prefix.pch";
+				INFOPLIST_FILE = "Walkwork/Walkwork-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "113159CB-D436-4E2A-BF39-1531A5AC44F9";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCBBB320158A3626007C2301 /* Build configuration list for PBXProject "Walkwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCBBB342158A3626007C2301 /* Debug */,
+				DCBBB343158A3626007C2301 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCBBB344158A3626007C2301 /* Build configuration list for PBXNativeTarget "Walkwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCBBB345158A3626007C2301 /* Debug */,
+				DCBBB346158A3626007C2301 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCBBB31D158A3626007C2301 /* Project object */;
+}
