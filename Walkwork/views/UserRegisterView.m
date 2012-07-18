@@ -27,6 +27,9 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        // set background color
+        self.backgroundColor = [UIColor whiteColor];
+        
         // set title
         self.title = NSLocalizedString(@"user register view title", nil);
         

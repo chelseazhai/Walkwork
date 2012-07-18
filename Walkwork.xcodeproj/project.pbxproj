@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC36C7F515B25AC800B559F4 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC36C7F415B25AC800B559F4 /* CoreText.framework */; };
 		DCAD36BF158F859B0013F438 /* Pinyin4jBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DCAD36BE158F859B0013F438 /* Pinyin4jBundle.bundle */; };
 		DCBBB32B158A3626007C2301 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBBB32A158A3626007C2301 /* UIKit.framework */; };
 		DCBBB32D158A3626007C2301 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBBB32C158A3626007C2301 /* Foundation.framework */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC36C7F415B25AC800B559F4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		DCAD36BE158F859B0013F438 /* Pinyin4jBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Pinyin4jBundle.bundle; sourceTree = "<group>"; };
 		DCBBB326158A3626007C2301 /* Walkwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Walkwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCBBB32A158A3626007C2301 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -71,6 +73,7 @@
 			files = (
 				DCC03695159C6D1C00D19A26 /* libicucore.dylib in Frameworks */,
 				DCBBB35A158A376C007C2301 /* libz.dylib in Frameworks */,
+				DC36C7F515B25AC800B559F4 /* CoreText.framework in Frameworks */,
 				DCBBB358158A3768007C2301 /* SystemConfiguration.framework in Frameworks */,
 				DCBBB356158A3762007C2301 /* MobileCoreServices.framework in Frameworks */,
 				DCBBB354158A3758007C2301 /* CFNetwork.framework in Frameworks */,
@@ -107,6 +110,7 @@
 			children = (
 				DCC03694159C6D1C00D19A26 /* libicucore.dylib */,
 				DCBBB359158A376C007C2301 /* libz.dylib */,
+				DC36C7F415B25AC800B559F4 /* CoreText.framework */,
 				DCBBB357158A3768007C2301 /* SystemConfiguration.framework */,
 				DCBBB355158A3762007C2301 /* MobileCoreServices.framework */,
 				DCBBB353158A3758007C2301 /* CFNetwork.framework */,
