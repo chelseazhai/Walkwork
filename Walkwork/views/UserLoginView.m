@@ -36,27 +36,40 @@
         // set navigation bar left button item: back to login button
         self.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"user register navigate button title", nil) style:UIBarButtonItemStyleDone target:self action:@selector(registerBtnClicked)];
         
+        // test pan gesture recognizer
+        UIView *_pView = [[UIView alloc] initWithFrame:CGRectMake(20.0, 20.0, 140.0, 200.0)];
+        _pView.backgroundColor = [UIColor redColor];
+        // set view gesture recognizer delegate
+        _pView.viewGestureRecognizerDelegate = self;
+        
+        /*
+        UIPanGestureRecognizer *_pangr = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleGestureRecognizer:)];
+        _pangr.delegate = self;
+        [_pView addGestureRecognizer:_pangr];
+        */
+         
+        UILabel *_l = [[UILabel alloc] initWithFrame:CGRectMake(5.0, 5.0, 60.0, 30.0)];
+        _l.backgroundColor = [UIColor greenColor];
+        _l.text = @"Label";
+        [_pView addSubview:_l];
+        
+        [self addSubview:_pView];
+        
         /*
         // test attributed label
-        UIAttributedLabel *_attributedLabel = [[UIAttributedLabel alloc] initWithFrame:CGRectMake(320.0 / 2 - 100.0, 480.0 / 2, 200.0, 20.0)];
-        _attributedLabel.backgroundColor = [UIColor greenColor];
+        UIAttributedLabel *_attributedLabel = [[UIAttributedLabel alloc] initWithFrame:CGRectMake(320.0 / 2 - 50.0, 480.0 / 2, 100.0, 18.0)];
+        //_attributedLabel.backgroundColor = [UIColor greenColor];
         
         // attributed string
-        NSMutableAttributedString *_attributedString = [NSMutableAttributedString attributedStringWithString:@"这是一个测试的带属性的标签"];
+        NSString *_testString = @"13770662051";
+        NSMutableAttributedString *_attributedString = [NSMutableAttributedString attributedStringWithString:_testString];
         // set attributed string attributes
         [_attributedString setFont:[UIFont systemFontOfSize:14.0]];
-        [_attributedString setFont:[UIFont systemFontOfSize:20.0] range:[@"这是一个测试的带属性的标签" rangeOfString:@"这是"]];
         [_attributedString setTextColor:[UIColor grayColor]];
-        [_attributedString setTextColor:[UIColor redColor] range:[@"这是一个测试的带属性的标签" rangeOfString:@"带属性的标签"]];
-        [_attributedString setTextUnderline:YES range:[@"这是一个测试的带属性的标签" rangeOfString:@"是一"]];
-        [_attributedString setTextBold:YES range:[@"这是一个测试的带属性的标签" rangeOfString:@"带属性的标签"]];
+        [_attributedString setTextColor:[UIColor redColor] range:NSMakeRange(1, 3)];
         
         // set attributed label attributed text
         _attributedLabel.attributedText = _attributedString;
-        // and add a link to the "share your food!" text
-        [_attributedLabel addCustomLink:[NSURL URLWithString:@"http://www.baidu.com"] inRange:[@"这是一个测试的带属性的标签" rangeOfString:@"测试的"]];
-        // use the "Justified" alignment
-        _attributedLabel.textAlignment = UITextAlignmentJustify;
         
         // add test attributed label to view
         [self addSubview:_attributedLabel];
@@ -74,10 +87,57 @@
 }
 */
 
+- (GestureType)supportedGestureInView:(UIView *)pView{
+    return pan | pinch;
+}
+
+- (void)view:(UIView *)pView frameChanged:(CGRect)pNewFrame{
+    //NSLog(@"view new frame = %@", NSStringFromCGRect(pNewFrame));
+}
+
 - (void)registerBtnClicked{
     if ([self validateViewControllerRef:self.viewControllerRef andSelector:@selector(userRegisterNavigate)]) {
-        [self.viewControllerRef performSelector:@selector(userRegisterNavigate)];
+        //[self.viewControllerRef performSelector:@selector(userRegisterNavigate)];
     }
+    
+    // test by ares
+    // test1
+    NSMutableArray *_testArray = [[NSMutableArray alloc] init];
+    [_testArray addObject:@"2"];
+    [_testArray addObject:@"3"];
+    [_testArray insertObject:@"1" atIndex:0];
+    [_testArray addObject:@"5"];
+    [_testArray insertObject:@"4" atIndex:3];
+    NSLog(@"test array = %@", _testArray);
+    
+    // test 2
+    NSString *_string = /*@"abcdefcdabecdf"*/@"翟彬彬";
+    NSString *_subString = /*@"cd"*/@"彬";
+    NSLog(@"ranges = %@", [_string rangesOfString:_subString]);
+    NSLog(@"range = %@", NSStringFromRange([_string rangeOfString:_subString]));
+    
+    // test3
+    NSString *_regTest1 = @"123";
+    NSLog(@"%d", [_regTest1 isMatchedByRegex:@"^\\d+$"]);
+    
+    // test4
+    NSString *_origString = @"hello12翟aREs@#绍虎簡訊 ,是 a吗";
+    for (NSInteger _index = 0; _index < _origString.length; _index++) {
+        //NSLog(@"char at %d pinyin array = %@", _index, [PinyinUtils pinyins4Char:[_origString characterAtIndex:_index]]);
+    }
+    
+    // test 5
+    NSArray *_pinyins = [PinyinUtils pinyins4String:_origString];
+    NSLog(@"pinyins = %@", _pinyins);
+    
+    // test 6
+    NSArray *_array2String = [NSArray arrayWithObjects:@"123", @"456", @"zha", @"ish", @"ao", @"h", @"u", nil];
+    NSLog(@"array to string = %@", [_array2String toStringWithSeparator:nil]);
 }
+
+/*
+- (void)handleGestureRecognizer:(UIGestureRecognizer *)pGestureRecognizer{
+}
+ */
 
 @end

@@ -2,7 +2,7 @@
 //  CommonToolkit.h
 //  CommonToolkit
 //
-//  Created by  on 12-6-14.
+//  Created by Ares on 12-6-14.
 //  Copyright (c) 2012年 richitec. All rights reserved.
 //
 
@@ -18,6 +18,8 @@
 
 #import "HttpUtil.h"
 #import "HttpUtil+Signature.h"
+
+#import "PinyinUtils.h"
 
 // FoundationExtension
 #import "NSArray+Extension.h"
@@ -67,6 +69,7 @@
 #import "UIActionSheet+Extension.h"
 #import "UIImage+Extension.h"
 #import "UITableView+Extension.h"
+#import "UIDevice+Extension.h"
 
 #import "UISoftKeyboard.h"
 #import "UISoftKeyboardCell.h"

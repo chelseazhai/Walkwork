@@ -2,7 +2,7 @@
 //  NSArray+Extension.h
 //  CommonToolkit
 //
-//  Created by  on 12-6-8.
+//  Created by Ares on 12-6-8.
 //  Copyright (c) 2012年 richitec. All rights reserved.
 //
 
@@ -15,13 +15,10 @@ typedef enum {
 } PhoneNumbersDisplayStyle;
 
 
-@interface NSArray (AddressBook)
+@interface NSArray (Contact)
 
 // get contact's phone numbers display text with style
 - (NSString *)getContactPhoneNumbersDisplayTextWithStyle:(PhoneNumbersDisplayStyle)pStyle;
-
-// split array can matches given name phonetics
-- (BOOL)isMatchedNamePhonetics:(NSArray *)pMatchesNamePhonetics;
 
 @end
 
@@ -30,10 +27,10 @@ typedef enum {
 
 @interface NSArray (Common)
 
+// array with NSRange, object is NSNumber
++ (id)arrayWithRange:(NSRange)pRange;
+
 // convert to string with separator
 - (NSString *)toStringWithSeparator:(NSString *)pSeparator;
-
-// multiplied by array
-- (NSArray *)multipliedByArray:(NSArray *)pArray;
 
 @end

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UserLoginView : UIView
+#import "CommonToolkit/CommonToolkit.h"
+
+@interface UserLoginView : UIView <UIViewGestureRecognizerDelegate>
 
 @end

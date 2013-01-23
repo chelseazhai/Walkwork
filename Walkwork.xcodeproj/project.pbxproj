@@ -335,7 +335,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: guanghui hu (TS23V9C6Z2)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -349,7 +350,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "18325F67-E9FB-44CF-852B-BEEA2FF29D43";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -360,15 +362,16 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: guanghui hu";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "78424ABC-9B28-4CFE-B1B4-2E3B4D692EAE";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -386,7 +389,7 @@
 				GCC_PREFIX_HEADER = "Walkwork/Walkwork-Prefix.pch";
 				INFOPLIST_FILE = "Walkwork/Walkwork-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8B3ACEA2-E5F2-4476-8DA8-19371550FD17";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "18325F67-E9FB-44CF-852B-BEEA2FF29D43";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -394,7 +397,7 @@
 		DCBBB346158A3626007C2301 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: guanghui hu (TS23V9C6Z2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: guanghui hu";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Walkwork/othersFramework\"",
@@ -403,7 +406,7 @@
 				GCC_PREFIX_HEADER = "Walkwork/Walkwork-Prefix.pch";
 				INFOPLIST_FILE = "Walkwork/Walkwork-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8B3ACEA2-E5F2-4476-8DA8-19371550FD17";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "78424ABC-9B28-4CFE-B1B4-2E3B4D692EAE";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

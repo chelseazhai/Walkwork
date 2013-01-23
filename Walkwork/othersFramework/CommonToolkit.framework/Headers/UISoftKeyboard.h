@@ -2,7 +2,7 @@
 //  UISoftKeyboard.h
 //  CommonToolkit
 //
-//  Created by  on 12-6-25.
+//  Created by Ares on 12-6-25.
 //  Copyright (c) 2012年 richitec. All rights reserved.
 //
 
@@ -117,5 +117,8 @@
 
 // generate indexPath for softKeyboard
 + (NSIndexPath *)indexPathForCell:(NSInteger)pSoftKeyboardCell inRow:(NSInteger)pSoftKeyboardRow;
+
+// compare with UISoftKeyboard indexPath
+- (BOOL)compareWithUISoftKeyboardIndexPath:(NSIndexPath *)pIndexPath;
 
 @end
