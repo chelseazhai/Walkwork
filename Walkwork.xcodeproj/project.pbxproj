@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		DC36C7F515B25AC800B559F4 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC36C7F415B25AC800B559F4 /* CoreText.framework */; };
+		DC8574F4174E012B008D8B76 /* CommonToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8574F3174E012A008D8B76 /* CommonToolkit.framework */; };
+		DC8574F9174E0186008D8B76 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC8574F5174E0186008D8B76 /* InfoPlist.strings */; };
+		DC8574FA174E0186008D8B76 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC8574F7174E0186008D8B76 /* Localizable.strings */; };
 		DCAD36BF158F859B0013F438 /* Pinyin4jBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DCAD36BE158F859B0013F438 /* Pinyin4jBundle.bundle */; };
 		DCBBB32B158A3626007C2301 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBBB32A158A3626007C2301 /* UIKit.framework */; };
 		DCBBB32D158A3626007C2301 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBBB32C158A3626007C2301 /* Foundation.framework */; };
 		DCBBB32F158A3626007C2301 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBBB32E158A3626007C2301 /* CoreGraphics.framework */; };
 		DCBBB337158A3626007C2301 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBBB336158A3626007C2301 /* main.m */; };
 		DCBBB33B158A3626007C2301 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBBB33A158A3626007C2301 /* AppDelegate.m */; };
-		DCBBB350158A3746007C2301 /* CommonToolkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBBB34F158A3746007C2301 /* CommonToolkit.framework */; };
 		DCBBB352158A3751007C2301 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBBB351158A3751007C2301 /* AddressBook.framework */; };
 		DCBBB354158A3758007C2301 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBBB353158A3758007C2301 /* CFNetwork.framework */; };
 		DCBBB356158A3762007C2301 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCBBB355158A3762007C2301 /* MobileCoreServices.framework */; };
@@ -24,14 +26,19 @@
 		DCBBB360158A386C007C2301 /* UserRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBBB35F158A386C007C2301 /* UserRegisterViewController.m */; };
 		DCBBB363158A3883007C2301 /* UserLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBBB362158A3883007C2301 /* UserLoginView.m */; };
 		DCBBB366158A3896007C2301 /* UserRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCBBB365158A3896007C2301 /* UserRegisterView.m */; };
-		DCBBB370158A3B28007C2301 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCBBB36E158A3B27007C2301 /* InfoPlist.strings */; };
-		DCBBB377158A3B4F007C2301 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCBBB375158A3B4F007C2301 /* Localizable.strings */; };
 		DCC03695159C6D1C00D19A26 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC03694159C6D1C00D19A26 /* libicucore.dylib */; };
 		DCD6AEF1158EF14C00CBBBDB /* CommonToolkitBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DCD6AEED158EF14C00CBBBDB /* CommonToolkitBundle.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DC36C7F415B25AC800B559F4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		DC8574F3174E012A008D8B76 /* CommonToolkit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonToolkit.framework; path = Walkwork/OtherFrameworks/CommonToolkit.framework; sourceTree = "<group>"; };
+		DC8574F6174E0186008D8B76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/Internationalization/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DC8574F8174E0186008D8B76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/Internationalization/en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DC8574FB174E0195008D8B76 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "Resources/Internationalization/zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		DC8574FC174E0195008D8B76 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "Resources/Internationalization/zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		DC8574FD174E01A0008D8B76 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "Resources/Internationalization/zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		DC8574FE174E01A0008D8B76 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "Resources/Internationalization/zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		DCAD36BE158F859B0013F438 /* Pinyin4jBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Pinyin4jBundle.bundle; sourceTree = "<group>"; };
 		DCBBB326158A3626007C2301 /* Walkwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Walkwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCBBB32A158A3626007C2301 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -42,7 +49,6 @@
 		DCBBB338158A3626007C2301 /* Walkwork-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Walkwork-Prefix.pch"; sourceTree = "<group>"; };
 		DCBBB339158A3626007C2301 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DCBBB33A158A3626007C2301 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DCBBB34F158A3746007C2301 /* CommonToolkit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonToolkit.framework; path = Walkwork/othersFramework/CommonToolkit.framework; sourceTree = "<group>"; };
 		DCBBB351158A3751007C2301 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		DCBBB353158A3758007C2301 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		DCBBB355158A3762007C2301 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -56,12 +62,6 @@
 		DCBBB362158A3883007C2301 /* UserLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserLoginView.m; path = views/UserLoginView.m; sourceTree = "<group>"; };
 		DCBBB364158A3896007C2301 /* UserRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserRegisterView.h; path = views/UserRegisterView.h; sourceTree = "<group>"; };
 		DCBBB365158A3896007C2301 /* UserRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserRegisterView.m; path = views/UserRegisterView.m; sourceTree = "<group>"; };
-		DCBBB36F158A3B28007C2301 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = internationalization/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DCBBB371158A3B3B007C2301 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "internationalization/zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		DCBBB373158A3B44007C2301 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "internationalization/zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		DCBBB376158A3B4F007C2301 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = internationalization/en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		DCBBB378158A3B66007C2301 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "internationalization/zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		DCBBB37A158A3B6F007C2301 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "internationalization/zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		DCC03694159C6D1C00D19A26 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		DCD6AEED158EF14C00CBBBDB /* CommonToolkitBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CommonToolkitBundle.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC8574F4174E012B008D8B76 /* CommonToolkit.framework in Frameworks */,
 				DCC03695159C6D1C00D19A26 /* libicucore.dylib in Frameworks */,
 				DCBBB35A158A376C007C2301 /* libz.dylib in Frameworks */,
 				DC36C7F515B25AC800B559F4 /* CoreText.framework in Frameworks */,
@@ -78,7 +79,6 @@
 				DCBBB356158A3762007C2301 /* MobileCoreServices.framework in Frameworks */,
 				DCBBB354158A3758007C2301 /* CFNetwork.framework in Frameworks */,
 				DCBBB352158A3751007C2301 /* AddressBook.framework in Frameworks */,
-				DCBBB350158A3746007C2301 /* CommonToolkit.framework in Frameworks */,
 				DCBBB32B158A3626007C2301 /* UIKit.framework in Frameworks */,
 				DCBBB32D158A3626007C2301 /* Foundation.framework in Frameworks */,
 				DCBBB32F158A3626007C2301 /* CoreGraphics.framework in Frameworks */,
@@ -91,9 +91,9 @@
 		DCBBB31B158A3626007C2301 = {
 			isa = PBXGroup;
 			children = (
-				DCBBB330158A3626007C2301 /* Walkwork */,
 				DCBBB329158A3626007C2301 /* Frameworks */,
 				DCBBB327158A3626007C2301 /* Products */,
+				DCBBB330158A3626007C2301 /* Walkwork */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,15 +110,15 @@
 			children = (
 				DCC03694159C6D1C00D19A26 /* libicucore.dylib */,
 				DCBBB359158A376C007C2301 /* libz.dylib */,
-				DC36C7F415B25AC800B559F4 /* CoreText.framework */,
-				DCBBB357158A3768007C2301 /* SystemConfiguration.framework */,
-				DCBBB355158A3762007C2301 /* MobileCoreServices.framework */,
-				DCBBB353158A3758007C2301 /* CFNetwork.framework */,
 				DCBBB351158A3751007C2301 /* AddressBook.framework */,
-				DCBBB34F158A3746007C2301 /* CommonToolkit.framework */,
-				DCBBB32A158A3626007C2301 /* UIKit.framework */,
-				DCBBB32C158A3626007C2301 /* Foundation.framework */,
+				DCBBB353158A3758007C2301 /* CFNetwork.framework */,
+				DC8574F3174E012A008D8B76 /* CommonToolkit.framework */,
 				DCBBB32E158A3626007C2301 /* CoreGraphics.framework */,
+				DC36C7F415B25AC800B559F4 /* CoreText.framework */,
+				DCBBB32C158A3626007C2301 /* Foundation.framework */,
+				DCBBB355158A3762007C2301 /* MobileCoreServices.framework */,
+				DCBBB357158A3768007C2301 /* SystemConfiguration.framework */,
+				DCBBB32A158A3626007C2301 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,9 +126,9 @@
 		DCBBB330158A3626007C2301 /* Walkwork */ = {
 			isa = PBXGroup;
 			children = (
+				DCBBB347158A36E7007C2301 /* App */,
 				DCBBB339158A3626007C2301 /* AppDelegate.h */,
 				DCBBB33A158A3626007C2301 /* AppDelegate.m */,
-				DCBBB347158A36E7007C2301 /* App */,
 				DCD6AEEB158EF14C00CBBBDB /* Resources */,
 				DCBBB331158A3626007C2301 /* Supporting Files */,
 			);
@@ -138,11 +138,11 @@
 		DCBBB331158A3626007C2301 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DCBBB332158A3626007C2301 /* Walkwork-Info.plist */,
-				DCBBB36E158A3B27007C2301 /* InfoPlist.strings */,
+				DC8574F5174E0186008D8B76 /* InfoPlist.strings */,
+				DC8574F7174E0186008D8B76 /* Localizable.strings */,
 				DCBBB336158A3626007C2301 /* main.m */,
+				DCBBB332158A3626007C2301 /* Walkwork-Info.plist */,
 				DCBBB338158A3626007C2301 /* Walkwork-Prefix.pch */,
-				DCBBB375158A3B4F007C2301 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -167,10 +167,10 @@
 		DCBBB34D158A3708007C2301 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				DCBBB35B158A3848007C2301 /* UserLoginViewController.h */,
-				DCBBB35C158A3848007C2301 /* UserLoginViewController.m */,
 				DCBBB361158A3883007C2301 /* UserLoginView.h */,
 				DCBBB362158A3883007C2301 /* UserLoginView.m */,
+				DCBBB35B158A3848007C2301 /* UserLoginViewController.h */,
+				DCBBB35C158A3848007C2301 /* UserLoginViewController.m */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -178,10 +178,10 @@
 		DCBBB34E158A370E007C2301 /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				DCBBB35E158A386C007C2301 /* UserRegisterViewController.h */,
-				DCBBB35F158A386C007C2301 /* UserRegisterViewController.m */,
 				DCBBB364158A3896007C2301 /* UserRegisterView.h */,
 				DCBBB365158A3896007C2301 /* UserRegisterView.m */,
+				DCBBB35E158A386C007C2301 /* UserRegisterViewController.h */,
+				DCBBB35F158A386C007C2301 /* UserRegisterViewController.m */,
 			);
 			name = Register;
 			sourceTree = "<group>";
@@ -280,10 +280,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCBBB370158A3B28007C2301 /* InfoPlist.strings in Resources */,
-				DCBBB377158A3B4F007C2301 /* Localizable.strings in Resources */,
 				DCD6AEF1158EF14C00CBBBDB /* CommonToolkitBundle.bundle in Resources */,
 				DCAD36BF158F859B0013F438 /* Pinyin4jBundle.bundle in Resources */,
+				DC8574F9174E0186008D8B76 /* InfoPlist.strings in Resources */,
+				DC8574FA174E0186008D8B76 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,22 +306,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DCBBB36E158A3B27007C2301 /* InfoPlist.strings */ = {
+		DC8574F5174E0186008D8B76 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DCBBB36F158A3B28007C2301 /* en */,
-				DCBBB371158A3B3B007C2301 /* zh-Hans */,
-				DCBBB373158A3B44007C2301 /* zh-Hant */,
+				DC8574F6174E0186008D8B76 /* en */,
+				DC8574FB174E0195008D8B76 /* zh-Hans */,
+				DC8574FD174E01A0008D8B76 /* zh-Hant */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		DCBBB375158A3B4F007C2301 /* Localizable.strings */ = {
+		DC8574F7174E0186008D8B76 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DCBBB376158A3B4F007C2301 /* en */,
-				DCBBB378158A3B66007C2301 /* zh-Hans */,
-				DCBBB37A158A3B6F007C2301 /* zh-Hant */,
+				DC8574F8174E0186008D8B76 /* en */,
+				DC8574FC174E0195008D8B76 /* zh-Hans */,
+				DC8574FE174E01A0008D8B76 /* zh-Hant */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -391,7 +391,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: guanghui hu (TS23V9C6Z2)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Walkwork/othersFramework\"",
+					"\"$(SRCROOT)/Walkwork/OtherFrameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Walkwork/Walkwork-Prefix.pch";
@@ -408,7 +408,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: guanghui hu";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Walkwork/othersFramework\"",
+					"\"$(SRCROOT)/Walkwork/OtherFrameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Walkwork/Walkwork-Prefix.pch";
