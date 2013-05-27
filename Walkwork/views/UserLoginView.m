@@ -88,11 +88,15 @@
 */
 
 - (GestureType)supportedGestureInView:(UIView *)pView{
-    return pan | pinch;
+    return tap | pan | pinch;
 }
 
 - (void)view:(UIView *)pView frameChanged:(CGRect)pNewFrame{
     //NSLog(@"view new frame = %@", NSStringFromCGRect(pNewFrame));
+}
+
+- (void)view:(UIView *)pView tapAtPoint:(CGPoint)pPoint andFingerMode:(TapFingerMode)pFingerMode andCountMode:(TapCountMode)pCountMode{
+    NSLog(@"view = %@, tap at point = %@, tap finger mode = %d and count mode = %d", pView, NSStringFromCGPoint(pPoint), pFingerMode, pCountMode);
 }
 
 - (void)registerBtnClicked{
